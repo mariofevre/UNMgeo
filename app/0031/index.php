@@ -52,6 +52,8 @@ if(!isset($_SESSION["unmgeo"])){
 	<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<link rel="stylesheet" type="text/css" href="./css/unmgeo.css">
 	
+	<link rel="icon" href="./img/unmicon.ico">
+	
 	<link rel="stylesheet" type="text/css" href="./css/CAP.css?v=9">
 	<link rel="stylesheet" type="text/css" href="./css/index.css?c=<?php echo time();?>">	
 	<link rel="stylesheet" type="text/css" href="./css/catalogo_autore_mapa.css?c=<?php echo time();?>">	
@@ -60,6 +62,9 @@ if(!isset($_SESSION["unmgeo"])){
 
 		<style type="text/css">
 			
+			body{
+				font-size:10px;	
+			}
 			
 			#tablasec{
 				display:none;
@@ -206,6 +211,9 @@ if(!isset($_SESSION["unmgeo"])){
 			
 			.fila{	
 				font-size:30px;
+				background-color:rgba(255,102,0,0.5);
+				border: 2px solid #000;
+				margin:2px;
 			}
 			#portatabla{
 					text-align:center;
@@ -216,7 +224,7 @@ if(!isset($_SESSION["unmgeo"])){
 				#mapa {
 					
 				  width: calc(100vw - 40px);
-				  height: calc(80vh - 60px);
+				  height: calc(75vh - 60px);
 				  position: absolute;
 				  top: 20px;
 				  left: 20px;
@@ -224,7 +232,7 @@ if(!isset($_SESSION["unmgeo"])){
 				
 				#portatabla {
 				  width: calc(100vw - 40px);
-				  height: 20vh;
+				  height: 25vh;
 				  position: absolute;
 				  left: 20px;
 				  bottom: 20px;
@@ -234,9 +242,17 @@ if(!isset($_SESSION["unmgeo"])){
 				.fila{
 					border: 1px solid #000;
 					margin: 3px;
-					padding: 10px;
+					padding: 5px 10px;
 					display:inline-block;
+					font-size:20px;
+					
 				}
+				.fila .titulo{
+					font-size:15px;
+					margin:0px;
+				}
+				
+				
 				
 			}
 		</style>
