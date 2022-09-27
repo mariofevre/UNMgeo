@@ -1,0 +1,64 @@
+#mapa {
+	width: calc(80vw - 60px);
+	height: calc(100vh - 40px);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#mapa[estado='cargando']{
+	background-image:url('./img/cargando.gif');
+	background-repeat: no-repeat;
+}
+#mapa div.ol-overlaycontainer-stopevent{
+	display:none;
+}
+
+			
+#menucapas{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 100;
+	background-color: rgba(100,100,100,1);
+	border: 4px solid rgba(200,200,200,0.3);
+	border-radius: 5px;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#menucapas img{
+	width:15px;
+	margin:4px 2px;
+}
+#menucapas[abierto='1']{
+	border-color: #08afd9;
+}
+
+#menucapas > div#opciones{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:30px;
+	border: 1px solid #444;
+	background-color:#fff;
+	width: 150px;
+	line-height: 15px;
+}
+#menucapas[abierto='1'] > div#opciones{
+	display:block;
+}
+#menucapas > div#opciones a{
+	display:block;
+}
+#menucapas[modo='IGN'] > div#opciones a[modo='IGN']{
+	color: #fff;
+	background-color:#08afd9;
+}
+#menucapas[modo='OSM'] > div#opciones a[modo='OSM']{
+	color: #fff;
+	background-color:#08afd9;
+}
+#menucapas[modo='Bing'] > div#opciones a[modo='Bing']{
+	color: #fff;
+	background-color:#08afd9;
+}

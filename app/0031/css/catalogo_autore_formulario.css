@@ -1,0 +1,225 @@
+
+#formularioObra{
+	display:none;
+	position:fixed;
+	top:150px;
+	right:2vw;
+	height:calc(100vh - 170px);
+	overflow-y:auto;
+	width:45vw;
+	background-color:#fff;
+	border:3px solid #aaa;
+	box-shadow:10px 10px 20px rgba(0,0,0,0.8);
+	z-index:100;	
+}
+
+#formularioObra[estado='activo']{
+	display:block;
+}
+
+#formularioObra select, #formularioObra input, #formularioObra textarea{
+	vertical-align: middle;
+	font-size: 10px;
+	font-family: inherit;
+	width: calc(100% - 20px);
+	margin: 4px;
+}
+
+#formularioObra > div.medio{
+	width: calc(50% - 10px);
+	display:inline-block;
+}
+
+#formularioObra > div.cuarto{
+	width: calc(25% - 5px);
+	display:inline-block;
+}
+
+
+
+
+#formularioColaboracion{
+	display:none;
+	position:fixed;
+	top:250px;
+	right:4vw;
+	height:height:calc(100vh - 270px);
+	width:35vw;
+	background-color:#fff;
+	border:3px solid #aaa;
+	box-shadow:10px 10px 20px rgba(0,0,0,0.8);
+	z-index:110;
+}
+#formularioColaboracion[estado='activo']{
+	display:block;
+}
+#formularioColaboracion select, #formularioColaboracion input, #formularioColaboracion textarea{
+	vertical-align: middle;
+	font-size: 10px;
+	font-family: inherit;
+	width: calc(100% - 20px);
+	margin: 4px;
+}
+
+
+#formularioLinkReferencia{
+	display:none;
+	position:fixed;
+	top:250px;
+	right:4vw;
+	height:height:calc(100vh - 270px);
+	width:35vw;
+	background-color:#fff;
+	border:3px solid #aaa;
+	box-shadow:10px 10px 20px rgba(0,0,0,0.8);
+	z-index:110;
+}
+#formularioLinkReferencia[estado='activo']{
+	display:block;
+}
+#formularioLinkReferencia select, #formularioLinkReferencia input, #formularioLinkReferencia textarea{
+	vertical-align: middle;
+	font-size: 10px;
+	font-family: inherit;
+	width: calc(100% - 20px);
+	margin: 4px;
+}
+
+
+	
+.formadjuntardoc #listadosubiendo{
+	width:calc(100% - 20px);	
+} 	  		
+.formadjuntardoc #listadosubiendo > p{
+	display:block;
+	border:1px solid #999;
+	margin:1px;
+	color:#444;
+	background-color:#ccc;
+	height:15px;
+	white-space: nowrap;
+}
+
+
+
+.formadjuntardoc {
+	z-index:5;
+	width:calc(100% - 15px);
+	display:inline-block;
+	margin:5px;
+	border:1px solid #444;
+	position:relative;
+	overflow:hidden;
+	
+}
+
+
+.formadjuntardoc #contenedorlienzo{
+	position:relative;
+	vertical-align:top;
+	display:inline-block;
+	border:2px solid #08afd9;
+	border-radius:10px;
+	box-shadow:5px 5px 5px rgba(0,0,0,0.5) inset;
+	background-color:#EEFBFF;
+	min-height:100px;
+	width: calc(100% - 20px);
+	margin:8px;
+}
+.formadjuntardoc #contenedorlienzo label{
+	width:100%;
+	color:#999;
+	margin:0px;
+	text-align:center;
+	line-height:13px;
+	display: none;
+	position: absolute;
+}
+	
+.formadjuntardoc #contenedorlienzo #uploadinput{
+	opacity:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:inline-block;
+}
+
+
+.formadjuntardoc img{
+	width:50px;
+}
+.formadjuntardoc .adjunto img{
+	width:100%;
+}
+.formadjuntardoc  .epigrafe{
+	max-height: 50px;
+}
+.formadjuntardoc  .elimina{
+	position:absolute;
+	top:0px;
+	right:0px;
+	color:red;
+	border: 1px solid red;
+	line-height:10px;
+	width:10px;
+	height:10px;
+	text-align:center;
+}
+
+
+.formadjuntardoc  .adjunto{
+	z-index:5;
+	width:50px;
+	display:inline-block;
+	margin:5px;
+	font-size:11px;
+	border:1px solid #444;
+	position:relative;
+	overflow:hidden;
+}
+
+#adjuntoslista{
+	text-align: center;
+}
+
+
+
+#formularioDocumento {
+  display: none;
+  position: fixed;
+  top: 250px;
+  right: 4vw;
+  height: height:calc(100vh - 270px);
+  width: 35vw;
+  background-color: #fff;
+  border: 3px solid #aaa;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+  z-index: 110;
+}
+
+
+#formularioDocumento input{
+  width:calc(100% - 5px);
+}
+
+#formularioDocumento textarea{
+  width:calc(100% - 5px);
+}
+
+#formularioDocumento #muestra{
+max-width:200px;
+max-height:80px;
+}
+
+
+#formularioDocumento[estado="activo"] {
+  display: block;
+}
+
+.eliminar{
+	border-color: #ff3333;
+	color: #aa1111;
+	background-color: rgba(255,155,155,1);
+}

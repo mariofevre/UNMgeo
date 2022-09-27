@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Lato regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Lato-Regular.woff') format('woff'), local('Lato regular'), local('Lato regular');
+}
+
+@font-face {
+  font-family: 'Lato bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Lato-Bold.woff') format('woff'), local('Lato regular'), local('Lato regular');
+}
+
+
+html, body {
+    vertical-align:middle;
+    font-family: 'Lato regular';
+    font-size:1.2vw;
+    background-image:none;
+    margin:0;
+    background-color:#e9ddaf;
+}
+
+h1{
+	 font-size:3vw;
+	 margin:1vw;
+	 text-align:center;
+	 background-color:#c83737;
+	 color:#fff;
+	 border:1px solid #000;
+}
+
+div#intro > div{
+	 font-size:1vw;
+	 margin:0.5vw;
+	 text-align:justify;
+}
+
+table{
+	width:90vw;
+	font-size:2.5vw;
+	text-align:center;
+	border:1px solid #000;
+	margin:5vw;
+	border-collapse: collapse;
+	background-color:#50ddcc;
+}
+
+td, th{
+	min-width:20vw;
+	border:1px solid #000;
+}
+	
+
+#fechaconsulta{
+	width:70vw;
+	left:15vw;
+	position:relative;
+	font-size:2vw;
+	text-align:center;
+	background-color:#ff6600;
+	border:1px solid #ff0000;
+}
+
+#intro{
+	width:90vw;
+	margin:4vw;
+	text-align:center;
+	background-color:#ffdd55;
+	border:1px solid #fff;
+}
+
+input{
+	width:40vw;
+    font-family: 'Lato regular';	
+	font-size:4vw;	
+	margin:2vw;
+	background-color:#ffdd55;
+}
+
+a{
+	text-decoration:none;
+	color:#008;
+	cursor:pointer;
+}
+
+#botonera{
+	text-align:center;
+}
+

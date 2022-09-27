@@ -1,0 +1,36 @@
+#portatabla{
+	background-color:#fff;
+	width: 20vw;
+	height:calc(100vh - 40px);
+	position:absolute;
+	top:20px;
+	right:1vw;
+	display:block;
+	overflow-y:scroll;
+	z-index: 10;
+	border: 1px solid #000;
+}
+
+#tabla{
+	background-color:#fff;
+}
+
+
+#tabla tbody tr{
+	cursor:pointer;
+	max-height:40px;
+}
+
+
+
+#tabla tbody tr:hover{
+	background-color:#50ddcc;
+}
+
+#tabla tbody td{
+	max-height:40px;
+}
+
+#tabla tbody td.observaciones{
+	font-size: max(0.7vw, 11px);
+}
